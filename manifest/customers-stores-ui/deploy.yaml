@@ -18,7 +18,7 @@ spec:
         app: customers-stores-ui
     spec:
       containers:
-      - image: altaira/customers-stores-ui:29e36ad8bffbef87bf295ccf7d5830ae9db467a2
+      - image: altaira/customers-stores-ui:ab512c36bb468e80adf5e11ca63951ccc59a3e23
         name: customers-stores-ui
         resources: {}
 status: {}
