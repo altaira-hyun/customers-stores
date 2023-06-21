@@ -1,0 +1,25 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  labels:
+    app: rest-microservices-customers
+  name: rest-microservices-customers
+  namespace: spring-cloud
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: rest-microservices-customers
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+      labels:
+        app: rest-microservices-customers
+    spec:
+      containers:
+      - image: altaira/rest-microservices-customers:f88888f6deb24e8b2894ebff3d4e76371037bcbc
+        name: rest-microservices-customers
+        resources: {}
+status: {}

@@ -1,0 +1,25 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  labels:
+    app: rest-microservices-store
+  name: rest-microservices-store
+  namespace: spring-cloud
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: rest-microservices-store
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+      labels:
+        app: rest-microservices-store
+    spec:
+      containers:
+      - image: altaira/rest-microservices-store:f88888f6deb24e8b2894ebff3d4e76371037bcbc
+        name: rest-microservices-store
+        resources: {}
+status: {}

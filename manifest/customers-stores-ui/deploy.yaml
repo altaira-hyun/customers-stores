@@ -1,0 +1,24 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  labels:
+    app: customers-stores-ui
+  name: customers-stores-ui
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: customers-stores-ui
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+      labels:
+        app: customers-stores-ui
+    spec:
+      containers:
+      - image: altaira/customers-stores-ui:f88888f6deb24e8b2894ebff3d4e76371037bcbc
+        name: customers-stores-ui
+        resources: {}
+status: {}
