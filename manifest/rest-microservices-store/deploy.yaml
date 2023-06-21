@@ -21,5 +21,7 @@ spec:
       containers:
       - image: altaira/rest-microservices-store:83c47bb8892659ec944231d984b71bbae941f926
         name: rest-microservices-store
+        ports:
+        - containerPort: 8081
         resources: {}
 status: {}
