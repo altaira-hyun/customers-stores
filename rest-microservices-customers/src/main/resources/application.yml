@@ -41,8 +41,7 @@ hystrix:
 
 spring:
   rabbitmq:
-    addresses: localhost:5672
-
+    addresses: rabbitmq-svc.spring-cloud.svc.cluster.local:5672
 logging:
   level:
     com.netflix.discovery: 'OFF'
@@ -51,7 +50,7 @@ logging:
 spring:
   profiles: mysql
   datasource:
-    url: jdbc:mysql://localhost:3306/test?useSSL=false
+    url: jdbc:mysql://mysql-svc.spring-cloud.svc.cluster.local:9009/test?useSSL=false
     username: root
     password: Megazone00!
     driver-class-name: com.mysql.cj.jdbc.Driver

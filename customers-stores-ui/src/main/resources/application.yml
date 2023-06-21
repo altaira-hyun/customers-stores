@@ -12,7 +12,7 @@ eureka:
     fetch-registry: true
     register-with-eureka: true
     service-url:
-      defaultZone : http://localhost:8761/eureka/
+      defaultZone : http://service-discovery-0.service-discovery-svc.spring-cloud.svc.cluster.local:8761/eureka/, http://service-discovery-1.service-discovery-svc.spring-cloud.svc.cluster.local:8761/eureka/
     metadataMap:
       instanceId: ${vcap.application.instance_id:${spring.application.name}:${spring.application.instance_id:${server.port}}}
 
