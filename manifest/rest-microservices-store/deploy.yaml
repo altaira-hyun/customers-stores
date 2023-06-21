@@ -19,7 +19,7 @@ spec:
         app: rest-microservices-store
     spec:
       containers:
-      - image: altaira/rest-microservices-store:f88888f6deb24e8b2894ebff3d4e76371037bcbc
+      - image: altaira/rest-microservices-store:8bb9c6158132acba9bbb54330fc88d199d3f8344
         name: rest-microservices-store
         resources: {}
 status: {}
