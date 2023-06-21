@@ -19,7 +19,7 @@ spec:
         app: rest-microservices-customers
     spec:
       containers:
-      - image: altaira/rest-microservices-customers:a02abb8f9ff2bced7a4f4cdc9f4b28aa83cb239d
+      - image: altaira/rest-microservices-customers:e4ca97d381a35aa380be22ad432916c70d3464f5
         name: rest-microservices-customers
         resources: {}
 status: {}
