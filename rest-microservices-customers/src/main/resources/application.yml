@@ -31,8 +31,7 @@ eureka:
     region: default
     registryFetchIntervalSeconds: 5
     availabilityZones: 
-      default: http://service-discovery-0.service-discovery-svc.spring-cloud.svc.cluster.local:8761/eureka/
-
+      default: 	http://service-discovery-0.service-discovery-svc.spring-cloud.svc.cluster.local:8761/eureka/, http://service-discovery-1.service-discovery-svc.spring-cloud.svc.cluster.local:8761/eureka/
 # For demo only allow more hystrix connections
 hystrix:
   stream:

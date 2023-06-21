@@ -29,8 +29,7 @@ eureka:
     registryFetchIntervalSeconds: 5
     region: default
     availabilityZones: 
-      default: http://service-discovery-0.service-discovery-svc.spring-cloud.svc.cluster.local:8761/eureka/
-
+      default: 	http://service-discovery-0.service-discovery-svc.spring-cloud.svc.cluster.local:8761/eureka/, http://service-discovery-1.service-discovery-svc.spring-cloud.svc.cluster.local:8761/eureka/
 logging:
   level:
     com.netflix.discovery: 'OFF'
